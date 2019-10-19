@@ -10,4 +10,4 @@ jobs:
     - uses: actions/checkout@v1
     - uses: ./.github/actions/test-clang-format
       with: 
-        exclude: src2
+        exclude: '.github'
