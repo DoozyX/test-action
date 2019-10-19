@@ -19,3 +19,4 @@ runs:
   args:
     - ${{ inputs.source }}
     - ${{ inputs.exclude }}
+    - ${{ inputs.extensions }}
