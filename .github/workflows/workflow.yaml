@@ -8,7 +8,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: clang-format lint
-      uses: DoozyX/clang-format-lint-action@v0.2
-      with:
-        exclude: ./src1
+    - uses: ./.github/actions/test-clang-format
+      with: 
+        exclude: './.github'
