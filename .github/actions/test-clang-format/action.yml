@@ -17,9 +17,13 @@ inputs:
     description: 'List of extensions to check'
     required: false
     default: 'c,h,C,H,cpp,hpp,cc,hh,c++,h++,cxx,hxx'
+  clang-format-version:
+    description: 'ClangFormat version'
+    required: false
+    default: '9.0.0'
 runs:
   using: 'docker'
-  image: 'docker://doozy/clang-format-lint:9.0.0'
+  image: 'docker://doozy/clang-format-lint:${{ inputs.clang-format-version }}'
   args:
     - ${{ inputs.source }}
     - ${{ inputs.exclude }}
