@@ -1,4 +1,6 @@
-FROM doozy/clang-format:9.0.0 as clang-format-bin
+ARG CLANG_VERSION
+
+FROM doozy/clang-format:${CLANG_VERSION} as clang-format-bin
 FROM python:3-alpine
 
 COPY --from=clang-format-bin /usr/bin/clang-format /usr/bin/
