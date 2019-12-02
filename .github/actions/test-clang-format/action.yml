@@ -23,7 +23,7 @@ inputs:
     default: '0.4'
 runs:
   using: 'docker'
-  image: 'docker://doozy/clang-format-lint:${{ inputs.clang }}'
+  image: 'docker://doozy/clang-format-lint:${{ clang }}'
   args:
     - ${{ inputs.source }}
     - ${{ inputs.exclude }}
