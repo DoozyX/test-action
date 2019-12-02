@@ -20,10 +20,10 @@ inputs:
   clang-format-version:
     description: 'ClangFormat version'
     required: false
-    default: '9.0.0'
+    default: '0.4'
 runs:
   using: 'docker'
-  image: 'docker://doozy/clang-format-lint:${{ inputs.clang-format-version }}'
+  image: 'docker://doozy/clang-format-lint:${inputs.clang-format-version}'
   args:
     - ${{ inputs.source }}
     - ${{ inputs.exclude }}
