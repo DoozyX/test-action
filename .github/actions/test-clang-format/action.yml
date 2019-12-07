@@ -17,7 +17,7 @@ inputs:
     description: 'List of extensions to check'
     required: false
     default: 'c,h,C,H,cpp,hpp,cc,hh,c++,h++,cxx,hxx'
-  clang-format-version:
+  clangFormatVersion:
     description: 'Version of clang-format'
     required: false
     default: '9'
@@ -28,4 +28,4 @@ runs:
     - ${{ inputs.source }}
     - ${{ inputs.exclude }}
     - ${{ inputs.extensions }}
-    - ${{ inputs.clang-format-version }}
+    - ${{ inputs.clangFormatVersion }}
