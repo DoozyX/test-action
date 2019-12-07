@@ -11,3 +11,4 @@ jobs:
     - uses: ./.github/actions/test-clang-format
       with: 
         exclude: './.github'
+        clang-format-version: 9
