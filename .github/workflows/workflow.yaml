@@ -11,5 +11,4 @@ jobs:
     - uses: DoozyX/clang-format-lint-action@v0.7
       with: 
         exclude: './.github'
-        clangFormatVersion: 9 
-      
+        clangFormatVersion: 10      
