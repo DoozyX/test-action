@@ -10,5 +10,6 @@ jobs:
     - uses: actions/checkout@v1
     - uses: DoozyX/clang-format-lint-action@v0.8
       with: 
-        exclude: './.github ./src1'
+        exclude: './.github'
+        source: 'src src2 src1'
         clangFormatVersion: 10      
