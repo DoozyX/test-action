@@ -8,8 +8,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - uses: DoozyX/clang-format-lint-action@v0.8
+    - uses: DoozyX/clang-format-lint-action@v0.11
       with: 
         exclude: './.github'
         source: 'src src2'
-        clangFormatVersion: 10      
+        clangFormatVersion: 11 
