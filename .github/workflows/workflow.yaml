@@ -12,4 +12,5 @@ jobs:
       with: 
         exclude: './.github'
         source: 'src src2'
-        clangFormatVersion: 11 
+        clangFormatVersion: 11
+        inplace: False
