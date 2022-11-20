@@ -8,9 +8,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - uses: DoozyX/clang-format-lint-action@v0.14
+    - uses: DoozyX/clang-format-lint-action@v0.15
       with: 
         exclude: './.github'
         source: 'src src2'
-        clangFormatVersion: 14
+        clangFormatVersion: 15
         inplace: False
